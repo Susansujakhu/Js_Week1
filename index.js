@@ -53,7 +53,7 @@ function array_elements() {
 		//console.log(value);
 	});
 	//console.log(fav_place);
-		
+	
 	fav_place.splice(point,1);
 	fav_place.forEach( function(value, index){
 		document.getElementById('remove_ktm').innerHTML += "<li>"+value+"</li>"; 
@@ -63,7 +63,7 @@ function array_elements() {
 
 	document.getElementById('array_length').innerHTML = "The Lenth of Array is : " + fav_place.length;
 
-	}
+}
 
 
 
@@ -79,8 +79,8 @@ function tips_calculate() {
 		document.getElementById('tips').innerText = '';
 	}
 	else {
-	var tips_amount = (amount * percent) / 100;
-	console.log(tips_amount);
-	document.getElementById('tips').innerText = "Tips Amount is Rs. " + tips_amount;
-}
+		var tips_amount = (amount * percent) / 100;
+		console.log(tips_amount);
+		document.getElementById('tips').innerText = "Tips Amount is Rs. " + tips_amount;
+	}
 }
