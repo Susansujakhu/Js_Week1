@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="refresh" content="3"> 
+ 
 	<title>Clock</title>
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -13,17 +13,44 @@
 		<div id="date"></div>
 	</div>
 	<hr>
-	<div id='circle'>
-		<h3>Task 2: Circumference Calculator</h3>
-		<label>Radius : </label>
-		<input type="number" id="radius" placeholder="Enter Radius">
-		<button onclick="calcCircumfrence();" >Calculate</button>
-		<label id="Result"></label>
+	<div class="task_2_4">
+		<div id='circle'>
+			<h3>Task 2: Circumference Calculator</h3>
+			<label>Radius : </label>
+			<input type="number" id="radius" placeholder="Enter Radius">
+			<button onclick="calcCircumfrence();" >Calculate</button><br>
+			<label id="Result"></label>
+		</div>
+		<div>
+			<h3>Task 4: Tips Calculator</h3>
+			<label>Total Amount : </label>
+			<input type="number" id="amount"><br>
+			<label>Tips Percent : </label>
+			<input type="number" id="percent"><br>
+			<button onclick="tips_calculate();" >Calculate</button>
+			<label id="tips" ></label>
+		</div>
 	</div>
 	<hr>
-	<div id='Array'>
-		<h3>Task 3: Array Manipulation</h3>
+	<h3>Task 3: Array Manipulation</h3>
+	<div class='content'>
+		
+		<div>
 
+			<label>My Favourite Places :</label>
+			<ul id="default_array"></ul>
+		</div>
+		<div>
+			<label>Add 2 More Favourite Places :</label>
+			<ul id="add_2_places"></ul>
+		</div>
+		<div>
+			<label>Removing Kathmandu :</label>
+			<ul id="remove_ktm"></ul>
+		</div>
 	</div>
+	<label id="array_length"></label>
+	<hr>
+	
 </body>
 </html>

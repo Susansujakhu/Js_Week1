@@ -20,6 +20,17 @@
 }
 
 label{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: cursive;
+}
+
+
+.task_2_4{
+		display: grid;
+	grid-template-columns: auto auto auto ;
+}
+
+.content{
+	display: grid;
+	grid-template-columns: auto auto auto ;
 }
