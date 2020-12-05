@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+	<!--<meta http-equiv="refresh" content="3">-->
 	<title>Clock</title>
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -21,12 +21,12 @@
 			<button onclick="calcCircumfrence();" >Calculate</button><br>
 			<label id="Result"></label>
 		</div>
-		<div>
+		<div id="tips_calc">
 			<h3>Task 4: Tips Calculator</h3>
 			<label>Total Amount : </label>
-			<input type="number" id="amount"><br>
+			<input type="number" id="amount" placeholder="Enter Total Amount"><br>
 			<label>Tips Percent : </label>
-			<input type="number" id="percent"><br>
+			<input type="number" id="percent" placeholder="Enter Tips Percentage"><br>
 			<button onclick="tips_calculate();" >Calculate</button>
 			<label id="tips" ></label>
 		</div>
@@ -38,18 +38,21 @@
 		<div>
 
 			<label>My Favourite Places :</label>
-			<ul id="default_array"></ul>
+			<ol id="default_array"></ol>
+			<label id="default_array_length"></label>
 		</div>
 		<div>
 			<label>Add 2 More Favourite Places :</label>
-			<ul id="add_2_places"></ul>
+			<ol id="add_2_places"></ol>
+			<label id="added_array_length"></label>
 		</div>
 		<div>
 			<label>Removing Kathmandu :</label>
-			<ul id="remove_ktm"></ul>
+			<ol id="remove_ktm"></ol>
+			<label id="array_length"></label>
 		</div>
 	</div>
-	<label id="array_length"></label>
+	
 	<hr>
 	
 </body>

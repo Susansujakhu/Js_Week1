@@ -7,6 +7,10 @@
 
 }
 
+#Digital_clock{
+	height: 8vw;
+}
+
 #time{
 	display: flex;
 	justify-content: center;
@@ -24,13 +28,48 @@ label{
 	font-family: cursive;
 }
 
+input{
+	font-family: monospace;
+	font-size: 15px;
+	border-radius: 5px;
+	width: 30%;
+}
+
+button{
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: rgba(0, 128, 0, 0.6);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+button:hover{
+	transition-duration: 3s;
+	background-color: rgba(0, 128, 0, 1);
+}
+
 
 .task_2_4{
-		display: grid;
-	grid-template-columns: auto auto auto ;
+	display: grid;
+	grid-template-columns: auto auto;
+	height: 11vw;
+
 }
+
+#circle{
+	padding-left: 20px;
+	background-color: rgba(0, 128, 0, 0.3);
+}
+
+#tips_calc{
+	padding-left: 20px;
+	background-color: rgba(0, 0, 128, 0.3);
+}
+
 
 .content{
 	display: grid;
 	grid-template-columns: auto auto auto ;
+	
 }

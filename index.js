@@ -24,7 +24,7 @@ function calcCircumfrence() {
 		document.getElementById('Result').innerText = '';
 	}
 	else{
-		result = 2*3.14*radius;
+		result = (2*3.14*radius).toFixed(2);
 		console.log(2*3.14*radius);
 		document.getElementById('Result').innerText = "The Circumference is : " + result;
 	}
@@ -43,6 +43,8 @@ function array_elements() {
 		document.getElementById('default_array').innerHTML += "<li>"+value+"</li>"; 
 		//console.log(value);
 	});
+	document.getElementById('default_array_length').innerHTML = "The Lenth of Array is : " + fav_place.length;
+
 	var point;
 	fav_place.splice(4, 0, "Bhaktapur", "Banepa");
 	fav_place.forEach( function(value, index){
@@ -52,6 +54,7 @@ function array_elements() {
 		}
 		//console.log(value);
 	});
+	document.getElementById('added_array_length').innerHTML = "The Lenth of Array is : " + fav_place.length;
 	//console.log(fav_place);
 	
 	fav_place.splice(point,1);
@@ -79,7 +82,7 @@ function tips_calculate() {
 		document.getElementById('tips').innerText = '';
 	}
 	else {
-		var tips_amount = (amount * percent) / 100;
+		var tips_amount = ((amount * percent) / 100).toFixed(2);
 		console.log(tips_amount);
 		document.getElementById('tips').innerText = "Tips Amount is Rs. " + tips_amount;
 	}
